@@ -1,0 +1,96 @@
+.main {
+  font-family: "Inter", sans-serif;
+  color: white;
+  min-height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 200px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.main2 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.subtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+.subtext p {
+  margin: 0;
+  width: 550px;
+}
+.subtext,
+.subtext2 {
+  margin-bottom: 25px;
+}
+
+.subtext2 {
+  margin-top: 70px;
+}
+
+.rating-stars {
+  margin-bottom: 85px;
+  display: inline-block;
+  position: relative;
+}
+
+svg {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.comment {
+  display: flex;
+  justify-content: center;
+}
+
+.inserText {
+  margin: 0;
+  width: 550px;
+  padding: 10px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: #b51389;
+  color: white;
+}
+
+.btninfo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 180px;
+  height: 50px;
+  background-color: #00ffff;
+  box-shadow: 0 0 10px 2px #00ffff;
+  border: none;
+}
+
+#btnLink {
+  text-decoration: none;
+  color: #0b113b;
+}

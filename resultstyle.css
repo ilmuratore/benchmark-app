@@ -1,0 +1,130 @@
+/*INIZIO CSS WELCOME PAGE*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+
+body {
+    background-image: url(../img/bg.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Classe header uguale per tutti e se avete tanti punti in cui mettete il bold aggiungete direttamente la classe  */
+.bold {
+    font-weight: bold;
+    color: white;
+}
+
+#header img {
+    width: 15%;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+/*CSS RESULTS */
+
+
+#main {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topTitle {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.sezioneDx, .dx {
+    color: #D20094;
+    text-align: right;
+}
+
+.sezioneSx, .sx {
+    color: #00FFFF;
+    text-align: left;
+}
+
+
+.sezioneSx,
+.sezioneDx {
+    margin: 70px;
+    font-size: 60px;
+    padding: 90px;
+}
+
+.sezioneSx p,
+.sezioneDx p {
+    font-size: 20px;
+}
+
+.hole {
+    color: white;
+    padding: 30px;
+    margin: 40px;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.hole .esito {
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+.hole h3 {
+    font-weight: bold;
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 40px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle::before {
+    background-color: #0B113C;
+    height: 290px;
+    width: 290px;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hole p {
+    padding: 12px;
+    margin: 10px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.rate-us-btn {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    padding: 20px;
+    width: 15%;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+}
+
+
+.rate-us-btn:hover {
+    background-color: #00FFFF;
+    color: #D20094;
+}

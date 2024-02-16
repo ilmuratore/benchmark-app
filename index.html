@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/benchmarkstyle.css">
+    <link rel="stylesheet" href="./assets/css/resultstyle.css">
+    <link rel="stylesheet" href="./assets/css/feedback.css">
+
+    <title>Benchmark Platform</title>
+</head>
+<body>
+    <main>
+
+    <header>
+        <img src="./assets/img/epicode_logo.png" alt="logo epicode">
+    </header>
+    
+    <div id="welcomePage">
+        <div class="welcomeContainer">
+            <h2> Welcome to <br><span class="bold">your exam</span> </h2>
+            <h3>Instructions</h3>
+            <p>We don't expect most engineers to know the answers to all of these <br>questions, so don't worry if
+                you're unsure of a few of them.</p>
+
+            <ul>
+                <li>Each question is <span class="bold">timed</span> and can only be <span class="bold">answered
+                        once.</span></li>
+                <li>Changing browser tab or opening other windows will <span class="bold">invalidate the
+                        question.</span></li>
+                <li>This exam will take approx. <span class="bold">0-5 minutes.</span></li>
+            </ul>
+
+        </div>
+
+        <div class="welcomeBox">
+            <input type="checkbox"  id="confermaPulsante" class="check" required>
+            <label for="confermaPulsante">I promise to answer myself without
+                help from anyone</label>
+            <button class="btn" >PROCEED</button>
+        </div>
+    </div>
+
+
+
+
+<!-- INIZIO PARTE BENCHMARK -->
+
+    <div id="benchmark" class="main-graph">
+        
+        <div class="timer">
+            <div id="app"></div>
+        </div>
+
+        <div class="quiz-app">
+            <div class="quizz-container">
+                <p class="question"></p>
+                <div class="answer"></div>
+            <div>
+                <button class="next-btn">Next</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Question
+            <div class="answer-number"> 1 su 50
+               <!-- qui bisogna inserire l'indice delle risposte e quale risposta e' visualizzata e tra quelle proposte--> 
+            </div>  
+        </div>
+    </div>
+
+    
+<!-- FINE PARTE BENCHMARK -->
+
+
+<!-- Inizio Result-->
+
+<div id="resultsPage">
+    <div id="topTitle">
+        <h2 class="bold">Results</h2>
+        <p>The summary of your answers:</p>
+    </div>
+
+    <div id="main">
+
+        <!--SEZIONEsx % DOMANDE CORRETTE -->
+        
+        <div class="sezioneSx">
+            <h3>Correct</h3>
+            <h3 id="correct-result-percentage" class="bold sx">66.7%</h3>
+            <p id="correct-question">4/6 questions</p>
+        </div>
+
+        <!-- SEZIONE CENTRALE GRAFICO A CIAMBELLLA -->
+        <div class="circle">
+
+            <div class="hole">
+
+                <h3 id="complimenti">Congratulations!</h3>
+                <h3 id="result"class="esito">You passed the exam.</h3>
+                <p id="certificato">
+                    We'll send the certificate in few minutes. Check your email (inclouding promotions/
+                    spam
+                    floder)
+                </p>
+            </div>
+        </div>
+
+        <!-- SEZIONEdx % DOMANDE SBAGLIATE -->
+        <div class="sezioneDx">
+
+            <h3>Wrong</h3>
+
+            <h3 id="wrong-result-percentage" class="bold dx">33.3%</h3>
+
+            <p id="wrong-question">2/6 questions</p>
+        </div>
+    </div>
+   
+        <button id="feedback-page" class="rate-us-btn">RATE US</button>
+     
+</div>
+
+
+<!-- Fine Parte Result-->
+
+<!-- Inizio Parte Feedback-->
+<div id="feedback">
+    <div class="main">
+        <div class="main2"> 
+            <h2>
+                Tell us how it's going
+            </h2>
+        
+            <div class="subtext">
+            <p> From 1 to 10, how likely are you to reccommend EPICODE to a friend or a colleague?</p>
+            </div>  
+            
+        
+            <div class="rating-stars">
+            <div class="stars">
+    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"class ="star">
+    <path  class=img d="M22.2044 1.55551C22.6143 0.569963 24.0104 0.569964 24.4203 1.55552L29.9874 14.9402C30.1602 15.3557 30.5509 15.6396 30.9994 15.6756L45.4494 16.834C46.5134 16.9193 46.9448 18.2471 46.1341 18.9415L35.1248 28.3722C34.7831 28.6649 34.6338 29.1242 34.7382 29.5619L38.1018 43.6626C38.3494 44.7009 37.2199 45.5215 36.309 44.9651L23.9379 37.4089C23.5538 37.1743 23.0709 37.1743 22.6868 37.4089L10.3157 44.9651C9.40478 45.5215 8.27528 44.7009 8.52295 43.6626L11.8865 29.5619C11.9909 29.1242 11.8416 28.6649 11.4999 28.3722L0.490575 18.9415C-0.320069 18.2471 0.111362 16.9193 1.17535 16.834L15.6253 15.6756C16.0738 15.6396 16.4645 15.3557 16.6374 14.9402L22.2044 1.55551Z" fill="#3a2c7a"/>
+    </svg>
+    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"class ="star">
+    <path  class=img d="M22.2044 1.55551C22.6143 0.569963 24.0104 0.569964 24.4203 1.55552L29.9874 14.9402C30.1602 15.3557 30.5509 15.6396 30.9994 15.6756L45.4494 16.834C46.5134 16.9193 46.9448 18.2471 46.1341 18.9415L35.1248 28.3722C34.7831 28.6649 34.6338 29.1242 34.7382 29.5619L38.1018 43.6626C38.3494 44.7009 37.2199 45.5215 36.309 44.9651L23.9379 37.4089C23.5538 37.1743 23.0709 37.1743 22.6868 37.4089L10.3157 44.9651C9.40478 45.5215 8.27528 44.7009 8.52295 43.6626L11.8865 29.5619C11.9909 29.1242 11.8416 28.6649 11.4999 28.3722L0.490575 18.9415C-0.320069 18.2471 0.111362 16.9193 1.17535 16.834L15.6253 15.6756C16.0738 15.6396 16.4645 15.3557 16.6374 14.9402L22.2044 1.55551Z" fill="#3a2c7a"/>
+    </svg>
+    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"class ="star">
+    <path class=img  d="M22.2044 1.55551C22.6143 0.569963 24.0104 0.569964 24.4203 1.55552L29.9874 14.9402C30.1602 15.3557 30.5509 15.6396 30.9994 15.6756L45.4494 16.834C46.5134 16.9193 46.9448 18.2471 46.1341 18.9415L35.1248 28.3722C34.7831 28.6649 34.6338 29.1242 34.7382 29.5619L38.1018 43.6626C38.3494 44.7009 37.2199 45.5215 36.309 44.9651L23.9379 37.4089C23.5538 37.1743 23.0709 37.1743 22.6868 37.4089L10.3157 44.9651C9.40478 45.5215 8.27528 44.7009 8.52295 43.6626L11.8865 29.5619C11.9909 29.1242 11.8416 28.6649 11.4999 28.3722L0.490575 18.9415C-0.320069 18.2471 0.111362 16.9193 1.17535 16.834L15.6253 15.6756C16.0738 15.6396 16.4645 15.3557 16.6374 14.9402L22.2044 1.55551Z" fill="#3a2c7a"/>
+    </svg>
+    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"class ="star">
+    <path  class=img d="M22.2044 1.55551C22.6143 0.569963 24.0104 0.569964 24.4203 1.55552L29.9874 14.9402C30.1602 15.3557 30.5509 15.6396 30.9994 15.6756L45.4494 16.834C46.5134 16.9193 46.9448 18.2471 46.1341 18.9415L35.1248 28.3722C34.7831 28.6649 34.6338 29.1242 34.7382 29.5619L38.1018 43.6626C38.3494 44.7009 37.2199 45.5215 36.309 44.9651L23.9379 37.4089C23.5538 37.1743 23.0709 37.1743 22.6868 37.4089L10.3157 44.9651C9.40478 45.5215 8.27528 44.7009 8.52295 43.6626L11.8865 29.5619C11.9909 29.1242 11.8416 28.6649 11.4999 28.3722L0.490575 18.9415C-0.320069 18.2471 0.111362 16.9193 1.17535 16.834L15.6253 15.6756C16.0738 15.6396 16.4645 15.3557 16.6374 14.9402L22.2044 1.55551Z" fill="#3a2c7a"/>
+    </svg>
+    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"class ="star">
+    <path class=img  d="M22.2044 1.55551C22.6143 0.569963 24.0104 0.569964 24.4203 1.55552L29.9874 14.9402C30.1602 15.3557 30.5509 15.6396 30.9994 15.6756L45.4494 16.834C46.5134 16.9193 46.9448 18.2471 46.1341 18.9415L35.1248 28.3722C34.7831 28.6649 34.6338 29.1242 34.7382 29.5619L38.1018 43.6626C38.3494 44.7009 37.2199 45.5215 36.309 44.9651L23.9379 37.4089C23.5538 37.1743 23.0709 37.1743 22.6868 37.4089L10.3157 44.9651C9.40478 45.5215 8.27528 44.7009 8.52295 43.6626L11.8865 29.5619C11.9909 29.1242 11.8416 28.6649 11.4999 28.3722L0.490575 18.9415C-0.320069 18.2471 0.111362 16.9193 1.17535 16.834L15.6253 15.6756C16.0738 15.6396 16.4645 15.3557 16.6374 14.9402L22.2044 1.55551Z" fill="#3a2c7a"/>
+    </svg>
+    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"class ="star">
+    <path class=img  d="M22.2044 1.55551C22.6143 0.569963 24.0104 0.569964 24.4203 1.55552L29.9874 14.9402C30.1602 15.3557 30.5509 15.6396 30.9994 15.6756L45.4494 16.834C46.5134 16.9193 46.9448 18.2471 46.1341 18.9415L35.1248 28.3722C34.7831 28.6649 34.6338 29.1242 34.7382 29.5619L38.1018 43.6626C38.3494 44.7009 37.2199 45.5215 36.309 44.9651L23.9379 37.4089C23.5538 37.1743 23.0709 37.1743 22.6868 37.4089L10.3157 44.9651C9.40478 45.5215 8.27528 44.7009 8.52295 43.6626L11.8865 29.5619C11.9909 29.1242 11.8416 28.6649 11.4999 28.3722L0.490575 18.9415C-0.320069 18.2471 0.111362 16.9193 1.17535 16.834L15.6253 15.6756C16.0738 15.6396 16.4645 15.3557 16.6374 14.9402L22.2044 1.55551Z" fill="#3a2c7a"/>
+    </svg>
+    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"class ="star">
+    <path class=img  d="M22.2044 1.55551C22.6143 0.569963 24.0104 0.569964 24.4203 1.55552L29.9874 14.9402C30.1602 15.3557 30.5509 15.6396 30.9994 15.6756L45.4494 16.834C46.5134 16.9193 46.9448 18.2471 46.1341 18.9415L35.1248 28.3722C34.7831 28.6649 34.6338 29.1242 34.7382 29.5619L38.1018 43.6626C38.3494 44.7009 37.2199 45.5215 36.309 44.9651L23.9379 37.4089C23.5538 37.1743 23.0709 37.1743 22.6868 37.4089L10.3157 44.9651C9.40478 45.5215 8.27528 44.7009 8.52295 43.6626L11.8865 29.5619C11.9909 29.1242 11.8416 28.6649 11.4999 28.3722L0.490575 18.9415C-0.320069 18.2471 0.111362 16.9193 1.17535 16.834L15.6253 15.6756C16.0738 15.6396 16.4645 15.3557 16.6374 14.9402L22.2044 1.55551Z" fill="#3a2c7a"/>
+    </svg>
+    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"class ="star">
+    <path class=img  d="M22.2044 1.55551C22.6143 0.569963 24.0104 0.569964 24.4203 1.55552L29.9874 14.9402C30.1602 15.3557 30.5509 15.6396 30.9994 15.6756L45.4494 16.834C46.5134 16.9193 46.9448 18.2471 46.1341 18.9415L35.1248 28.3722C34.7831 28.6649 34.6338 29.1242 34.7382 29.5619L38.1018 43.6626C38.3494 44.7009 37.2199 45.5215 36.309 44.9651L23.9379 37.4089C23.5538 37.1743 23.0709 37.1743 22.6868 37.4089L10.3157 44.9651C9.40478 45.5215 8.27528 44.7009 8.52295 43.6626L11.8865 29.5619C11.9909 29.1242 11.8416 28.6649 11.4999 28.3722L0.490575 18.9415C-0.320069 18.2471 0.111362 16.9193 1.17535 16.834L15.6253 15.6756C16.0738 15.6396 16.4645 15.3557 16.6374 14.9402L22.2044 1.55551Z" fill="#3a2c7a"/>
+    </svg>
+    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"class ="star">
+    <path class=img  d="M22.2044 1.55551C22.6143 0.569963 24.0104 0.569964 24.4203 1.55552L29.9874 14.9402C30.1602 15.3557 30.5509 15.6396 30.9994 15.6756L45.4494 16.834C46.5134 16.9193 46.9448 18.2471 46.1341 18.9415L35.1248 28.3722C34.7831 28.6649 34.6338 29.1242 34.7382 29.5619L38.1018 43.6626C38.3494 44.7009 37.2199 45.5215 36.309 44.9651L23.9379 37.4089C23.5538 37.1743 23.0709 37.1743 22.6868 37.4089L10.3157 44.9651C9.40478 45.5215 8.27528 44.7009 8.52295 43.6626L11.8865 29.5619C11.9909 29.1242 11.8416 28.6649 11.4999 28.3722L0.490575 18.9415C-0.320069 18.2471 0.111362 16.9193 1.17535 16.834L15.6253 15.6756C16.0738 15.6396 16.4645 15.3557 16.6374 14.9402L22.2044 1.55551Z" fill="#3a2c7a"/>
+    </svg>
+    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg"class ="star">
+    <path  class=img d="M22.2044 1.55551C22.6143 0.569963 24.0104 0.569964 24.4203 1.55552L29.9874 14.9402C30.1602 15.3557 30.5509 15.6396 30.9994 15.6756L45.4494 16.834C46.5134 16.9193 46.9448 18.2471 46.1341 18.9415L35.1248 28.3722C34.7831 28.6649 34.6338 29.1242 34.7382 29.5619L38.1018 43.6626C38.3494 44.7009 37.2199 45.5215 36.309 44.9651L23.9379 37.4089C23.5538 37.1743 23.0709 37.1743 22.6868 37.4089L10.3157 44.9651C9.40478 45.5215 8.27528 44.7009 8.52295 43.6626L11.8865 29.5619C11.9909 29.1242 11.8416 28.6649 11.4999 28.3722L0.490575 18.9415C-0.320069 18.2471 0.111362 16.9193 1.17535 16.834L15.6253 15.6756C16.0738 15.6396 16.4645 15.3557 16.6374 14.9402L22.2044 1.55551Z" fill="#3a2c7a"/>
+    </svg>
+
+    </div>
+
+    <div class="subtext2">
+                Leave us an open feedback about your expirience so far
+            </div>
+            <div class="comment">
+            <input type="text" placeholder="Write your comment here" class="inserText"></input>
+            </div>
+            <button class="btninfo"><a id= btnLink href="https://www.freecodecamp.org/italian/news/convalida-dati-moduli/">MORE INFO</a></button>
+        </div>   
+    </div>
+</div>
+</main>
+<!-- Fine Parte Feedback-->
+<script src="./assets/js/script.js"></script>
+
+<script src="./assets/js/feedback-script.js"></script>
+
+</body>
+</html>

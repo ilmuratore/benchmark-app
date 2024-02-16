@@ -1,0 +1,120 @@
+
+/*INIZIO CSS PARTE COMUNE ALLE 4 PAGE*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+   
+}
+#resultsPage, #feedback {
+    display: none;
+}
+main{
+    margin-left: 90px ;
+    margin-top: 30px ;
+}
+header img{
+    width: 13%;
+}
+
+
+/*FINE CSS PARTE COMUNE ALLE 4 PAGE*/
+.welcomeContainer{
+    color: #FFF;
+   
+}
+
+.welcomeContainer .bold{
+    font-weight: 700;
+}
+
+.welcomeContainer h2{
+    margin: 60px 0 30px 0;
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+.welcomeBox{
+    margin-top: 60px;
+}
+.welcomeContainer h3 {
+    color: #C2148E;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.welcomeContainer p, .welcomeContainer ul{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+.welcomeContainer ul {
+    list-style-type: disc;
+    margin: 0 0 0px 25px;
+}
+
+.welcomeBox .welcomeBox + input {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    line-height: 60vh;
+    position: relative;
+}
+
+.check{
+    width: 30px;
+    height: 15px;
+    border: 1px solid #FFF;
+}
+
+
+.btn {
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 15px 50px;
+    background-color: #00FFFF;
+    border: none;
+    box-shadow: 0px 0px 25px 2px rgba(0,255,255,0.9);;
+    margin-left: 150px;
+}
+
+
+/* Stile del falso elemento di checkbox */
+input[type="checkbox"] {
+    display: none; 
+}
+
+.check + label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff; 
+    position: relative;
+    top: 4px; 
+    margin-right: 5px; 
+    cursor: pointer; 
+}
+
+/* Stile del falso elemento di checkbox quando è selezionato */
+.check:checked + label::before {
+    background-color: #fff; 
+    border-color: #fff; 
+}
+
+/* Stile del falso elemento di checkbox quando è selezionato (simula la spunta) */
+.check:checked + label::before {
+    content: '\2713';
+    color: #000; 
+    text-align: center;
+    left: auto;
+    top: auto;
+}
+
